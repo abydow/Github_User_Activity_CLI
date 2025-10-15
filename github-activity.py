@@ -6,6 +6,11 @@ github user activity cli TOOL
 shows:Github user activity using built in python
 
 """
-# Libraries to use
 
-""""<sys,json,urllib(.request,.error),datetime>"""
+import sys
+import json 
+from urllib.request import urlopen,Request
+from urllib.error import HTTPError,URLError
+from datetime import datetime 
+
+
