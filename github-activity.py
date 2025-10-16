@@ -23,6 +23,7 @@ def main():
     #important function(main)
     #checks command line arg
     if len(sys.argv) != 2:
+        print("WRONG!!!")
         print_usage()
         sys.exit(1)
 
