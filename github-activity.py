@@ -34,5 +34,5 @@ def main():
         print("Please Enter a valid USername")
         sys.exit(1)
 
-   print(f"Fetching activity for github user: {usernamer}")
-   print("-" * 50)
+    print(f"Fetching activity for github user: {usernamer}")
+    print("-" * 50)
