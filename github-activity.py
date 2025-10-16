@@ -36,3 +36,5 @@ def main():
 
     print(f"Fetching activity for github user: {usernamer}")
     print("-" * 50)
+
+main()
