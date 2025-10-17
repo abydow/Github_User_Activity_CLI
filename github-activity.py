@@ -46,7 +46,7 @@ def fetch_user_activity(username):
     request = Request(url,headers=headers)
     #to handle errors during request
     try:
-	with urlopen(request,timeout=10) as response:
+        with urlopen(request,timeout=10) as response:
              if response.status == 200:
                  data = response.read()
                  events = json.loads(data.decode('utf-8'))
@@ -54,3 +54,24 @@ def fetch_user_activity(username):
              else:
                  print(f"Error: Received status code {response.status}")
                  return None
+
+    except HTTPError as e:
+        if e.status == 404:
+             print(f"Error: User '{username}' not found.")
+        elif e.status == 403:
+             print("Error: API rate limit exceeded. Please try again later.")
+        else:
+             print(f"HTTP Error: {e.status} - {e.reason}")
+        return None
+
+    except URLError as e:
+        print(f"Network Error: {e.reason}")
+        return None
+
+    except TimeoutError:
+        print("Error: Request timed out. Please try again")
+        return None
+
+    except json.JSONDecodeError:
+        print("Error: Failed to parse response from github API.")
+        return None
