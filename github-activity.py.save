@@ -22,10 +22,7 @@ def print_usage():
 def main():
     #important function(main)
     #checks command line arg
-    if len(sys.argv) != 2:
-        print("WRONG!!!")
-        print_usage()
-        sys.exit(1)
+    if len(sys.argv) != 2: print("WRONG!!!") print_usage() sys.exit(1)
 
     username = sys.argv[1]
 
@@ -34,8 +31,8 @@ def main():
         print("ERROR:")
         print("Please Enter a valid USername")
         sys.exit(1)
-    print("┌"+"─" * 35 + "┐")
-    print(f"| Fetching activity for github user ├─> {username}")
-    print("└"+"─" * 35 + "┘")
-main()
 
+    print(f"Fetching activity for github user: {username}")
+    print("-" * 50)
+
+main()
