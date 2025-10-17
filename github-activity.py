@@ -37,5 +37,10 @@ def main():
     print("┌"+"─" * 35 + "┐")
     print(f"| Fetching activity for github user ├─> {username}")
     print("└"+"─" * 35 + "┘")
-main()
 
+def fetch_user_activity(username):
+    #fetches useractivity from the api<:
+    url = f"https://api.github.com/users/{username}'/events"
+    #header
+    headers = {'User-Agent':'github-user-activity-cli'}
+    request = Request(url,headers=headers)
