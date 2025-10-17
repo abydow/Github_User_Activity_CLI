@@ -35,7 +35,7 @@ def main():
         print("Please Enter a valid USername")
         sys.exit(1)
     print("┌"+"─" * 35 + "┐")
-    print(f"| Fetching activity for github user ├─> {username}")
+    print(f"| Fetching activity for github user |")
     print("└"+"─" * 35 + "┘")
 
 def fetch_user_activity(username):
@@ -44,3 +44,13 @@ def fetch_user_activity(username):
     #header
     headers = {'User-Agent':'github-user-activity-cli'}
     request = Request(url,headers=headers)
+    #to handle errors during request
+    try:
+	with urlopen(request,timeout=10) as response:
+             if response.status == 200:
+                 data = response.read()
+                 events = json.loads(data.decode('utf-8'))
+                 return events
+             else:
+                 print(f"Error: Received status code {response.status}")
+                 return None
