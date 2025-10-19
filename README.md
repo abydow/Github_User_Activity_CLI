@@ -46,18 +46,18 @@ python github-activity.py your-username
 
 1. **You** type a username (the easy part)
 2. **The script** politely asks GitHub's API for recent activity
-3. **GitHub** responds with a JSON blob (because who doesn't love JSON?)
-4. **We** parse that JSON faster than you can say "undefined is not a function"
+3. **GitHub** responds with a JSON blob 
+4. **We** parse that JSON fast
 5. **Your terminal** displays beautiful, formatted activity
-6. **You** feel like a hacker from a 90s movie
+
 
 ### Under the Hood 🔧
 
 This project uses:
-- `urllib.request` - Because we're hardcore and don't need `requests`
-- `json` - For parsing GitHub's data buffet
-- `sys` - For that sweet command-line argument handling
-- `datetime` - Because timestamps are important, people!
+- `urllib.request` 
+- `json` 
+- `sys` 
+- `datetime` 
 
 **No pip install required!** This is 100% Python standard library. 
 
