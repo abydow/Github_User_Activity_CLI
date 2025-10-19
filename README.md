@@ -12,14 +12,14 @@
 
 ### Prerequisites
 
-- Python 3.6+ (If you're still on Python 2, we need to have a talk)
-- Internet connection (Duh!)
+- Python 3.6+ 
+- Internet connection 
 - A GitHub username to research
 
 ### Installation
 
 ```bash
-# Clone this bad boy
+# Clone this 
 git clone https://github.com/yourusername/github-activity.git
 cd github-activity
 
@@ -33,13 +33,10 @@ python github-activity.py <username>
 ### Example Usage
 
 ```bash
-# See what the legendary Linus Torvalds is up to
-python github-activity.py torvalds
+python github-activity.py legend
 
-# Check on your coding idol
-python github-activity.py kamranahmedse
+python github-activity.py zane
 
-# Stalk yourself (no judgment here)
 python github-activity.py your-username
 ```
 
@@ -64,7 +61,7 @@ This project uses:
 
 **No pip install required!** This is 100% Python standard library. 
 
-## 🛠️ Advanced Usage (For the Overachievers)
+## 🛠️ Advanced Usage 
 
 ### Common Use Cases
 
@@ -94,7 +91,7 @@ python github-activity.py dhh
 
 ### Pro Tips 💡
 
-- GitHub API has rate limits (60 requests/hour without auth). Don't go crazy!
+- GitHub API has rate limit (60 requests/hour without auth). Don't go crazy!
 - The tool shows the 10 most recent activities by default
 - Timestamps are in UTC 
 
