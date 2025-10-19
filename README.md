@@ -47,7 +47,7 @@ python github-activity.py your-username
 1. **You** type a username (the easy part)
 2. **The script** politely asks GitHub's API for recent activity
 3. **GitHub** responds with a JSON blob 
-4. **We** parse that JSON fast
+4. We parse that **JSON** fast
 5. **Your terminal** displays beautiful, formatted activity
 
 
