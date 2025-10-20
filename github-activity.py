@@ -56,8 +56,6 @@ def main():
     if len(events) > 10:
         print(f"\n... and {len(events) - 10} more activities")
 
-if __name__ == "__main__":
-    main()    
 
 def fetch_user_activity(username):
     #fetches useractivity from the api<:
@@ -119,7 +117,7 @@ def format_event(event):
     if event_type == 'PushEvent':
         payload = event.get('payload',{})
         commit_count = payload.get('size',0)
-        return f"- Pushed {commit_count} commit(s) to {repo_name} at {formatted time}"
+        return f"- Pushed {commit_count} commit(s) to {repo_name} at {formatted_time}"
 
     elif event_type == 'IssuesEvent':
         payload = event.get('payload', {})
@@ -152,3 +150,6 @@ def format_event(event):
     
     else:
         return f"- {event_type} in {repo_name} at {formatted_time}"    
+
+if __name__ == "__main__":
+    main()
