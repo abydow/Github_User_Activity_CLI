@@ -59,7 +59,7 @@ def main():
 
 def fetch_user_activity(username):
     #fetches useractivity from the api<:
-    url = f"https://api.github.com/users/{username}'/events"
+    url = f"https://api.github.com/users/{username}/events"
     #header
     headers = {'User-Agent':'github-user-activity-cli'}
     request = Request(url,headers=headers)
@@ -111,13 +111,13 @@ def format_event(event):
     # formatting the github event
     event_type = event.get('type', 'Unknown')
     repo_name = event.get('repo',{}).get('name', 'Unknown repo')
-    created_at = event.get('created at', '')
+    created_at = event.get('created_at', '')
     formatted_time = format_event_time(created_at)
 
     if event_type == 'PushEvent':
         payload = event.get('payload',{})
-        commit_count = payload.get('size',0)
-        return f"- Pushed {commit_count} commit(s) to {repo_name} at {formatted_time}"
+        ref = payload.get('ref', '').replace('refs/heads/', '')
+        return f"- Pushed to {repo_name} (branch: {ref}) at {formatted_time}"
 
     elif event_type == 'IssuesEvent':
         payload = event.get('payload', {})
