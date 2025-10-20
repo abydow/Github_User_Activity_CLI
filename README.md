@@ -30,13 +30,16 @@ chmod +x github-activity.py
 python github-activity.py <username>
 ```
 
-### Example Usage
+### Test Script
 
 ```bash
-python github-activity.py legend
+# leave it blank and see the output
+python github-activity.py      
 
-python github-activity.py zane
+# put multiple user 
+python github-activity.py zane legend okami Adi
 
+#put your username to check the actual masala!!
 python github-activity.py your-username
 ```
 
@@ -126,7 +129,6 @@ Found a bug? Want to add a feature? Have a hilarious error message to suggest? W
 - [ ] Star gazers tracking
 - [ ] Contribution streak counter
 - [ ] Integration with terminal notifications
-- [ ] Web UI (just kidding... unless? 👀)
 
 
 
