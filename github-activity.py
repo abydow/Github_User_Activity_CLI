@@ -149,7 +149,7 @@ def format_event(event):
         return f"- Deleted {ref_type} '{ref}' in {repo_name} at {formatted_time}"
     
     else:
-        return f"- {event_type} in {repo_name} at {formatted_time}"    
-
+        return f"- {event_type} in {repo_name} at {formatted_time}"   
+        
 if __name__ == "__main__":
     main()

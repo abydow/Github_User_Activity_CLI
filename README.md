@@ -2,7 +2,6 @@
 
 ![Python Version](https://img.shields.io/badge/python-3.11%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-stalking%20legally-brightgreen)
 
 > **"With great power comes great responsibility... "**
 
@@ -119,17 +118,6 @@ Found a bug? Want to add a feature? Have a hilarious error message to suggest? W
 
 
 
-## 🎯 Roadmap (The Dream)
-
-- [x] Basic functionality
-- [x] Error handling that doesn't make you cry
-- [ ] Colored output
-- [ ] Activity statistics and graphs
-- [ ] Multiple user comparison
-- [ ] Star gazers tracking
-- [ ] Contribution streak counter
-- [ ] Integration with terminal notifications
-
 
 
 ## 📞 Support & Contact
@@ -138,8 +126,8 @@ Having issues? Questions? Just want to chat about code?
 
 - 🐛 [Open an issue](https://github.com/yourusername/github-activity/issues)
 - 💬 [Start a discussion](https://github.com/yourusername/github-activity/discussions)
-- 📧 Email: abydow@hotmail.com
-- Linkedin: www.linkedin.com/in/abydow
+- 📧 [Email]( abydow@hotmail.com )
+-    [Linkedin]( www.linkedin.com/in/abydow )
 
 ## ⚠️ Disclaimer
 
