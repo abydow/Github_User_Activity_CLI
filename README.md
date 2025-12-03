@@ -2,6 +2,7 @@
 
 ![Python Version](https://img.shields.io/badge/python-3.11%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
+![Project URL](https://roadmap.sh/projects/github-user-activity)
 
 > **"With great power comes great responsibility... "**
 
@@ -151,6 +152,7 @@ python github-activity.py torvalds
 If this project helped you, consider giving it a ⭐!
 
 *"In code we trust, in bugs we debug."* 🐛
+</div>
 
 [⬆ Back to Top](#-github-user-activity-cli)
 
