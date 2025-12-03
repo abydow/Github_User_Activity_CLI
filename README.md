@@ -2,7 +2,8 @@
 
 ![Python Version](https://img.shields.io/badge/python-3.11%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Project URL](https://roadmap.sh/projects/github-user-activity)
+
+> Project URL: https://roadmap.sh/projects/github-user-activity
 
 > **"With great power comes great responsibility... "**
 
